@@ -1,0 +1,15 @@
+# Maven
+**/target/ 
+**/build/
+**/out
+
+# eclipse
+**/.settings
+**/.classpath
+**/.project
+
+# mac
+.DS_Store
+
+## node(javascript) project
+**/node_modules
