@@ -17,8 +17,7 @@ function print({
 }) {
   console.log(`${no}:${name}:${email}`);
 }
-// 템플릿 문자열 
-
-for (let user of users) {
+for (var _i = 0, _users = users; _i < _users.length; _i++) {
+  let user = _users[_i];
   print(user);
 }
