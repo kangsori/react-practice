@@ -17,3 +17,6 @@
 4) Env Preset 설정
     - 타겟 브라우저를 설정하는 방식
     - 브라우저별 es6 호환성 테이블 (https://kangax.github.io/compat-table/es6)
+
+5) 변환 하기
+    $ npx babel src/index.js -o dist/index.js 
