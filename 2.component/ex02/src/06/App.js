@@ -27,7 +27,7 @@ function App(props) {
     return (
         <StyledDiv id='App'>
             <StyledH1>CSS in JS</StyledH1>
-            <Content>
+            <Content color={'#f00'}>
                 Style Component*, Less & Styleable
             </Content>
         </StyledDiv>
