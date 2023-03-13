@@ -42,7 +42,11 @@
 .Emaillist li a:before {
     content:'X'
 }
-.Emaillist li a:hover, a:visited, a:active {
+.Emaillist li a:visited, a:active {
     text-decoration: none;
     color: #fff;
+}
+
+.Emaillist li a:hover {
+    background-color: #e40;
 }
