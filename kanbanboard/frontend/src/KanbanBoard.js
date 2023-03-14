@@ -2,17 +2,26 @@ import React ,{ useState } from 'react';
 import styles from './assets/css/KanbanBoard.css'
 import data from './assets/json/data.json';
 import CardList from './CardList';
+import update from 'react-addons-update';
 
 const KanbanBoard = () => {
     const [cards, setCards] = useState(data);
     const changeTaskDone = function(cardNo, taskNo, done){
-        //console.log(cardNo, taskNo,done);
         const cardIndex = cards.findIndex(card => card.no === cardNo);
-        const taskindex = cards[cardIndex].tasks.findIndex(task => task.no === taskNo);
-        //console.log(cardNo, taskNo);
-        cards[cardIndex].tasks[taskindex].done = done;
+        const taskIndex = cards[cardIndex].tasks.findIndex(task => task.no === taskNo);
 
-        setCards(cards);
+        const newCards = update(cards, {
+            [cardIndex] : {
+                tasks : {
+                    [taskIndex] : {
+                        done : {
+                            $set : done
+                        }
+                    }
+                }
+            }
+        });
+        setCards(newCards);
     }
 
     return (
