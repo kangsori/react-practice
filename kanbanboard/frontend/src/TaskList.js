@@ -15,6 +15,9 @@ const TaskList = ({tasks, callbackAddTask, callbackChangeTaskDone}) => {
                                         callbackChangeTaskDone={callbackChangeTaskDone}/>)
                 }
             </ul>
+
+
+
             <input 
                 type='text' 
                 placeholder={'태스크 추가'}
