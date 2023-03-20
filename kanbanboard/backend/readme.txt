@@ -25,7 +25,7 @@
 	5) ssh 연결 환경설정
 		- ~/.ssh/environment
 			===========
-			PATH=/usr/...
+			PATH=/root/.local/bin:/root/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/usr/local/douzone2023/java/bin:/usr/local/douzone2023/git/bin:/usr/local/douzone2023/maven3.8/bin
 			===========
 		
 		- /etc/ssh/sshd_config
