@@ -30,6 +30,7 @@
 		
 		- /etc/ssh/sshd_config
 			PermitUserEnvironment yes (했음)
+		- systemctl restart sshd
 		
 	6) jenkins 
 		- Publish over SSH 플러그인 설치
