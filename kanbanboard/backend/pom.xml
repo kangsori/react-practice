@@ -112,7 +112,7 @@
 							<goal>copy-resources</goal>
 						</goals>
 						<configuration>
-							<outoutDirectory>${basedir}/target</outoutDirectory>
+							<outputDirectory>${basedir}/target</outputDirectory>
 							<resources>
 								<resource>
 									<directory>src/main/resources/script</directory>
